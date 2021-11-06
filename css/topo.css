@@ -1,0 +1,107 @@
+.topo{
+    background:#fff !important;
+}
+.cabecalho{
+    background:red !important;
+    box-shadow: 0 0 10px rgb(0, 0, 0,0.2) !important;
+}
+
+.cabecalho .foto{
+    border-top-right-radius: 50% !important;
+    border-top-left-radius: 50% !important;
+    margin-left: 12px;
+    width: 70px;
+    height: 65px;
+    margin-top: -15px;
+}
+
+.lista{
+    background: #fff !important;
+    box-shadow: 0 0 10px rgb(0, 0, 0,0.2) !important;
+    
+    border-radius: 0px !important;
+}
+
+.iniciar{
+    background: transparent !important;
+    border: 0;
+    box-shadow: 0 0 10px rgb(0, 0, 0,0.2) !important;
+   border-bottom-left-radius: 0px;
+   border-top-left-radius: 0px;
+}
+
+.iniciar a{
+    color: #000 !important;
+    font-size: 20px;
+}
+
+.esconde{
+    background: rgb(254, 255, 255) !important;
+    border: 0;
+    box-shadow: 0 0 10px rgb(0, 0, 0,0.2) !important;
+   
+    border-radius: 30px !important;
+}
+
+.esconde a{
+    background: #fff !important;
+    border-radius: 0px !important;
+    color: black !important;
+    font-size: 20px;
+}
+
+
+.esconde ul{
+    background: transparent !important;
+    border: transparent;
+}
+
+.esconde ul li a{
+    background: #fff !important;
+    font-size: 20px;
+
+}
+
+.lista2{
+    background: #fff;
+    box-shadow: 0 0 10px rgb(0, 0, 0,0.2) !important;
+   
+}
+
+.lista2 a{
+    color: #000 !important;
+    font-size: 20px;
+    
+}
+
+.lista3{
+    background: transparent !important;
+}
+
+.esconde1{
+    
+    
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0 0 10px rgb(0, 0, 0,0.2) !important;
+   
+}
+
+.esconde1 a{
+    background: #fff !important;
+    border-radius: 0px !important;
+    color: red !important;
+    font-size: 20px;
+}
+
+
+.esconde1 ul{
+    background: transparent !important;
+    border: transparent;
+}
+
+.esconde1 ul li a{
+    background: #fff !important;
+
+}
+
