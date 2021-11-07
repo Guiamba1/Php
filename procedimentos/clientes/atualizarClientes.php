@@ -16,8 +16,8 @@ $dados=array(
 	$_POST['sobrenomeU'],
 	$_POST['enderecoU'],
 	$_POST['emailU'],
-	$_POST['telefoneU'],
-	$_POST['cpfU']
+	$_POST['telefoneU']
+
 	
 
 );

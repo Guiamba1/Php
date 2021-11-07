@@ -10,16 +10,18 @@ if(isset($_SESSION['usuario'])){
 	<head>
 		<title>clientes</title>
 		<?php require_once "menu.php"; ?>
+		<link rel="stylesheet" href="../css/tabela.css">
+		
 	</head>
 	<body>
-		<div class="container">
+		<div class="container painelcli">
 			<h1>Clientes</h1>
 			<div class="row">
-				<div class="col-sm-4">
+				<div class="col-sm-3 formulariocli">
 					<form id="frmClientes">
 						<label>Nome</label>
 						<input type="text" class="form-control input-sm" id="nome" name="nome">
-						<label>Sobrenome</label>
+						<label>Apelido</label>
 						<input type="text" class="form-control input-sm" id="sobrenome" name="sobrenome">
 						<label>Endereço</label>
 						<input type="text" class="form-control input-sm" id="endereco" name="endereco">
@@ -27,13 +29,12 @@ if(isset($_SESSION['usuario'])){
 						<input type="text" class="form-control input-sm" id="email" name="email">
 						<label>Telefone</label>
 						<input type="text" class="form-control input-sm" id="telefone" name="telefone">
-						<label>CPF</label>
-						<input type="text" class="form-control input-sm" id="cpf" name="cpf">
+						
 						<p></p>
 						<span class="btn btn-primary" id="btnAdicionarCliente">Salvar</span>
 					</form>
 				</div>
-				<div class="col-sm-8">
+				<div class="col-sm-8  tabelacli">
 					<div id="tabelaClientesLoad"></div>
 				</div>
 			</div>
@@ -55,7 +56,7 @@ if(isset($_SESSION['usuario'])){
 							<input type="text" hidden="" id="idclienteU" name="idclienteU">
 							<label>Nome</label>
 							<input type="text" class="form-control input-sm" id="nomeU" name="nomeU">
-							<label>Sobrenome</label>
+							<label>Apelido</label>
 							<input type="text" class="form-control input-sm" id="sobrenomeU" name="sobrenomeU">
 							<label>Endereço</label>
 							<input type="text" class="form-control input-sm" id="enderecoU" name="enderecoU">
@@ -63,8 +64,7 @@ if(isset($_SESSION['usuario'])){
 							<input type="text" class="form-control input-sm" id="emailU" name="emailU">
 							<label>Telefone</label>
 							<input type="text" class="form-control input-sm" id="telefoneU" name="telefoneU">
-							<label>CPF</label>
-							<input type="text" class="form-control input-sm" id="cpfU" name="cpfU">
+							
 						</form>
 					</div>
 					<div class="modal-footer">
@@ -96,8 +96,7 @@ if(isset($_SESSION['usuario'])){
 					$('#enderecoU').val(dado['endereco']);
 					$('#emailU').val(dado['email']);
 					$('#telefoneU').val(dado['telefone']);
-					$('#cpfU').val(dado['cpf']);
-
+					
 
 
 				}

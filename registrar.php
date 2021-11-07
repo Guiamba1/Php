@@ -82,6 +82,7 @@
 
 					if(r==1){
 						alert("Inserido com Sucesso!!");
+						$('##frmRegistro')[0].reset(); //limpar campos
 					}else{
 						alert("Erro ao Inserir");
 					}

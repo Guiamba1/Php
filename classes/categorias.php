@@ -7,8 +7,8 @@ class categorias{
 
 		
 
-		$sql = "INSERT into categorias (id_usuario, nome_categoria, dataCaptura) VALUES ('$dados[0]', '$dados[1]', 
-		   '$dados[2]')";
+		$sql = "INSERT into categorias (id_usuario, nome_categoria, dataCaptura)
+		 VALUES ('$dados[0]', '$dados[1]', '$dados[2]')";
 
 		return mysqli_query($conexao, $sql);
 	}

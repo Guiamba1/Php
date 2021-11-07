@@ -21,7 +21,7 @@ class usuarios{
 		$senha = sha1($dados[1]);
 
 		$_SESSION['usuario'] = $dados[0];
-		$_SESSION['id'] = self::trazerId($dados);
+		$_SESSION['iduser'] = self::trazerId($dados);
 
 		$sql = "SELECT * from usuarios where email = '$dados[0]' and senha = '$senha' ";
 

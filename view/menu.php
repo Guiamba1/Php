@@ -42,7 +42,7 @@
             <ul class="dropdown-menu">
               <li><a href="categorias.php">Categorias</a></li>
               <hr>
-              <li><a href="#.php">Produtos</a></li>
+              <li><a href="produtos.php">Produtos</a></li>
             </ul>
           </li>
 

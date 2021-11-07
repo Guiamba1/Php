@@ -21,9 +21,8 @@ $dados=array(
 	$_POST['sobrenome'],
 	$_POST['endereco'],
 	$_POST['email'],
-	$_POST['telefone'],
-	$_POST['cpf']
-
+	$_POST['telefone']
+	
 );
 
 echo $obj->adicionarCliente($dados);

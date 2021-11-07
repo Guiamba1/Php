@@ -1,0 +1,184 @@
+.painel{
+    background: #fff !important;
+    box-shadow: 0 0 10px rgb(0, 0, 0,0.2) !important;
+    border-radius: 0px;
+    
+}
+.painelcli{
+    background: #fff !important;
+    box-shadow: 0 0 10px rgb(0, 0, 0,0.2) !important;
+    border-radius: 0px;
+    
+}
+.painelcli h1{
+    color:black !important;
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 4px;
+    margin-bottom: 10px;
+    letter-spacing: 15px;
+    background: #fff !important;
+    box-shadow: 0 0 10px rgb(0, 0, 0,0.2) !important;
+    padding: 10px;
+    border-radius: 0px;
+}
+
+div h1{
+    color:black !important;
+    text-align: center;
+    margin-left: 35px;
+    margin-right: 80px;
+    margin-bottom: 10px;
+    letter-spacing: 15px;
+    background: #fff !important;
+    box-shadow: 0 0 10px rgb(0, 0, 0,0.2) !important;
+    padding: 10px;
+    border-radius: 0px;
+
+}
+.tabela{
+    background: #fff !important;
+    box-shadow: 0 0 10px rgb(0, 0, 0,0.2) !important;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    border-radius: 0px;
+
+}
+
+.tabelacli{
+    background: #fff !important;
+    box-shadow: 0 0 10px rgb(0, 0, 0,0.2) !important;
+    margin-left: 60px;
+    margin-bottom: 10px;
+    border-radius: 0px;
+   
+
+}
+
+.tituloTabcli caption{
+    color: black;
+    font-size: 18px;
+}
+.formulario{
+    background: #fff !important;
+    box-shadow: 0 0 10px rgb(0, 0, 0,0.2) !important;
+    margin-left: 50px;
+    padding: 20px;
+    border-radius: 0px;
+
+   
+}
+
+.formulariocli{
+    background: #fff !important;
+    box-shadow: 0 0 10px rgb(0, 0, 0,0.2) !important;
+    margin-left: 20px;
+    padding: 10px;
+    border-radius: 0px;
+}
+
+.formulariocli label{
+    font-size: 15px;
+}
+.formulario label{
+    font-size: 20px;
+}
+.tituloTab{
+    background: #fff !important;
+    box-shadow: 0 0 10px rgb(0, 0, 0,0.2) !important;
+}
+.tituloTabcli{
+    background: #fff !important;
+    box-shadow: 0 0 10px rgb(0, 0, 0,0.2) !important;
+    margin-right: -100px;
+}
+
+.tituloTab caption{
+    color:black !important;
+    font-size: 25px;
+}
+
+.tituloTab .cb{
+
+    color: #fff !important;
+    background: #000 !important;
+    box-shadow: 0 0 10px rgb(0, 0, 0,0.2) !important;
+    font-size: 20px;
+}
+
+
+.tituloTabcli .cb{
+
+    color: #fff !important;
+    background: #000 !important;
+    box-shadow: 0 0 10px rgb(0, 0, 0,0.2) !important;
+    font-size: 20px;
+}
+@media  (max-width: 900px) {
+    h1{
+        display: none;
+    }
+
+    .painel{
+        align-items: center;
+        margin-right: 10px;
+        margin-left: 10px;
+        border-radius: 5px;
+        margin-bottom: 5px;
+    }
+     .painelcli{
+         margin-left: 5px;
+         padding-right: 5px;
+         align-items: center;
+         margin-bottom: 5px;
+         border-radius: 5px;
+     }
+
+    .tabela{
+        align-items: center;
+        margin-right: 10px;
+        margin-left: 10px;
+        border-radius: 5px;
+    }
+    .tabelacli{
+        align-items: center;
+        margin-right: 13px;
+        margin-left: 3px;
+        border-radius: 5px;
+        margin-top: 5px;
+        background: transparent !important;
+        
+        
+    }
+    .formulario{
+        align-items: center;
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-bottom: 5px;
+        border-radius: 5px;
+        margin-top: 5px;
+
+    }
+
+    .tituloTabcli .cb{
+        font-size: 10px;
+        text-align: left;
+    }
+
+    .tituloTabcli .cb1{
+        font-size: 10px;
+        text-align: left;
+
+    }
+    .tituloTabcli{
+        margin-left: -10px;
+        border-radius: 15px  !important;
+    }
+
+    .formulariocli{
+        margin-right: 30px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+    }
+}

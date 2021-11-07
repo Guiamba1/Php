@@ -9,24 +9,35 @@ if(isset($_SESSION['usuario'])){
 	<html>
 	<head>
 		<title>categorias</title>
+		
 		<?php require_once "menu.php"; ?>
+		<link rel="stylesheet" href="../css/tabela.css">
+		
 	</head>
 	<body>
 
-		<div class="container">
-			<h1>Categorias</h1>
+		<div class="container painel ">
+			<h1>Painel de Categorias</h1>
 			<div class="row">
-				<div class="col-sm-4">
+				<!---Formulario para adicionar a categoria --->
+				<div class="col-sm-4 formulario">
+					
 					<form id="frmCategorias">
-						<label>Categoria</label>
-						<input type="text" class="form-control input-sm" name="categoria" id="categoria">
+						<label>Adicione a Categoria</label>
+						<input type="text" class="form-control input-sm" name="categoria" id="categoria" 
+						placeholder="Digite aqui o nome da categoria">
 						<p></p>
 						<span class="btn btn-primary" id="btnAdicionarCategoria">Adicionar</span>
 					</form>
+					
 				</div>
-				<div class="col-sm-6">
+				<!--- Fim de Formulario --->
+
+				<!------>
+				<div class="col-sm-6 tabela">
 					<div id="tabelaCategoriaLoad"></div>
 				</div>
+				<!------>
 			</div>
 		</div>
 
@@ -80,8 +91,10 @@ if(isset($_SESSION['usuario'])){
 					url:"../procedimentos/categorias/adicionarCategorias.php",
 					success:function(r){
 						
+						//alert(r);
 						if(r==1){
 					//limpar formulário
+					
 					$('#frmCategorias')[0].reset();
 
 					$('#tabelaCategoriaLoad').load("categorias/tabelaCategorias.php");
@@ -124,14 +137,14 @@ if(isset($_SESSION['usuario'])){
 
 	<script type="text/javascript">
 
-		function adicionarDado(idCategoria,categoria){
+		function adicionarDados(idCategoria,categoria){
 			$('#idcategoria').val(idCategoria);
 			$('#categoriaU').val(categoria);
 		}
 
 
 		function eliminaCategoria(idcategoria){
-			alertify.confirm('Deseja excluir esta categoria?', function(){ 
+			alertify.confirm('Deseja apagar esta categoria?', function(){ 
 				$.ajax({
 					type:"POST",
 					data:"idcategoria=" + idcategoria,
@@ -139,9 +152,9 @@ if(isset($_SESSION['usuario'])){
 					success:function(r){
 						if(r==1){
 							$('#tabelaCategoriaLoad').load("categorias/tabelaCategorias.php");
-							alertify.success("Excluido com sucesso!!");
+							alertify.success("Eliminado com sucesso!!");
 						}else{
-							alertify.error("Não Excluido");
+							alertify.error("Não foi eliminado");
 						}
 					}
 				});
