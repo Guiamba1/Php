@@ -14,9 +14,12 @@
   
 
 <div id="nav"  class = "todo">
+  
     <div class="navbar navbar-inverse navbar-fixed-top" data-spy="affix" data-offset-top="100">
       <div class="container">
+      
         <div class="navbar-header cabecalho">
+       
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
