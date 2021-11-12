@@ -21,10 +21,9 @@
         <div class="navbar-header cabecalho">
        
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
+            <span class="sr-only butao">Toggle navigation</span>
+          
+            <span>Menu</span>
           </button>
           <a class="navbar-brand " href="inicio.php"><img class="img-responsive logo img-thumbnail foto" src="../img/oscar.png" alt="Logo" ></a>
         </div>

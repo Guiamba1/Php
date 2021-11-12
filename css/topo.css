@@ -2,17 +2,18 @@
     background:#fff !important;
 }
 .cabecalho{
-    background:red !important;
-    box-shadow: 0 0 10px rgb(0, 0, 0,0.2) !important;
+    /*background:transparent !important;
+    box-shadow: 0 0 10px rgb(0, 0, 0,0.2) !important;*/
 }
 
 .cabecalho .foto{
-    border-top-right-radius: 50% !important;
-    border-top-left-radius: 50% !important;
+    /*border-top-right-radius: 50% !important;
+    border-top-left-radius: 50% !important;*/
     margin-left: 12px;
     width: 70px;
-    height: 65px;
-    margin-top: -15px;
+    height: 70px;
+    margin-top: -20px;
+    border-radius: 50%;
 }
 
 .lista{
@@ -103,5 +104,26 @@
 .esconde1 ul li a{
     background: #fff !important;
 
+}
+.cabecalho button{
+    color: #fff !important;
+    background: #555;
+  }
+
+/*======================================*/
+@media  (max-width: 900px) {
+    .cabecalho{
+        background:transparent !important;
+        box-shadow: 0 0 10px rgb(0, 0, 0,0.2) !important;
+    }
+
+    .cabecalho .foto{
+        width: 50px;
+        height: 50px;
+        margin-top: -12px;
+        border-radius: 50%;
+    }
+
+    
 }
 
