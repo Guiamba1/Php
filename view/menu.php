@@ -66,6 +66,10 @@
           <li class="dropdown esconde1">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-list-alt"></span> Usuario:<span class="caret"></span></a>
             <ul class="dropdown-menu">
+              
+            <?php if($_SESSION['usuario'] == 'oscar'): ?>
+              <li><a href="../registrar.php"><span class="glyphicon glyphicon-off"></span>Gestao de Usuarios</a></li>
+              <?php endif; ?>
               <hr>
               <li><a href="../procedimentos/sair.php"><span class="glyphicon glyphicon-off"></span> Sair</a></li>
             </ul>
