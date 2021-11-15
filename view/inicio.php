@@ -13,7 +13,7 @@
 	<?php require_once "menu.php" ?>
 </head>
 <body>
-ola Mundo
+
 </body>
 </html>
 

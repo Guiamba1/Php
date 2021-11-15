@@ -56,7 +56,7 @@ div h1{
 }
 
 .tituloTabcli caption{
-    color: black;
+    color: #fff;
     font-size: 18px;
 }
 .formulario{
@@ -101,7 +101,7 @@ div h1{
 .tituloTab .cb{
 
     color: #fff !important;
-    background: #000 !important;
+    background: #333 !important;
     box-shadow: 0 0 10px rgb(0, 0, 0,0.2) !important;
     font-size: 20px;
 }
@@ -110,7 +110,7 @@ div h1{
 .tituloTabcli .cb{
 
     color: #fff !important;
-    background: #000 !important;
+    background: #333 !important;
     box-shadow: 0 0 10px rgb(0, 0, 0,0.2) !important;
     font-size: 20px;
 }

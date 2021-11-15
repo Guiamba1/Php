@@ -48,10 +48,19 @@
 
        
 
-
-      <li class = "lista2"><a href="clientes.php"><span class="glyphicon glyphicon-user"></span> Clientes</a>
+<!--================================================================-->
+      <!-- li class = "lista2"><a href="clientes.php"><span class="glyphicon glyphicon-user"></span> Pessoas</a -->
+      <li class="dropdown esconde">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user"></span> Pessoas <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="clientes.php">Clientes</a></li>
+              <hr>
+              <li><a href="fornecedores.php">Fornecedores</a></li>
+            </ul>
           </li>
-      <li  class = "lista2"><a href="#"><span class="glyphicon glyphicon-usd"></span> Menu 3</a>
+<!--======================================================================================-->
+          </li>
+      <li  class = "lista2"><a href="#"><span class="glyphicon glyphicon-usd"></span>Vendas</a>
           </li>
           
           <li class="dropdown esconde1">
@@ -85,13 +94,13 @@
 <script type="text/javascript">
   $(window).scroll(function() {
     if ($(document).scrollTop() > 150) {
-      $('.logo').width(100);
-      $('.logo').height(60);
+      $('.logo').width(70);
+      $('.logo').height(70);
 
     }
     else {
-      $('.logo').height(100);
-      $('.logo').width(150);
+      $('.logo').height(70);
+      $('.logo').width(70);
     }
   }
   );

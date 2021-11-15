@@ -152,7 +152,7 @@ if(isset($_SESSION['usuario'])){
 					success:function(r){
 						if(r==1){
 							$('#tabelaCategoriaLoad').load("categorias/tabelaCategorias.php");
-							alertify.success("Eliminado com sucesso!!");
+							alertify.success("Categoria Eliminado com sucesso!!");
 						}else{
 							alertify.error("Não foi eliminado");
 						}

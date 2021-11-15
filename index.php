@@ -33,7 +33,11 @@
 			<div class="col-sm-3"></div>
 			<div class="col-sm-6  cor ">
 				<div class="panel panel-primary quadro">
-					<div class="panel panel-heading nome">Oscar Alberto</div>
+					<div class="panel panel-heading nome">
+						Copyrighte &copy; Oscar  <?php echo date('Y');  ?>
+
+
+					</div>
 					<div class="panel panel-body">
 						<p>
 							<img src="img/oscar.png">
