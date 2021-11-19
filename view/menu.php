@@ -60,7 +60,7 @@
           </li>
 <!--======================================================================================-->
           </li>
-      <li  class = "lista2"><a href="#"><span class="glyphicon glyphicon-usd"></span>Vendas</a>
+      <li  class = "lista2"><a href="vendas.php"><span class="glyphicon glyphicon-usd"></span>Vendas</a>
           </li>
           
           <li class="dropdown esconde1">

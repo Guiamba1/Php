@@ -38,8 +38,9 @@ class vendas{
 		$c= new conectar();
 		$conexao=$c->conexao();
 
-		$data=date('Y-m-d');
-		$idvenda=self::criarComprovante();
+		//$data=date('Y-m-d');
+		$data = date("Y-m-d h:i:sa");
+		$idvenda = self::criarComprovante();
 		$dados=$_SESSION['tabelaComprasTemp'];
 		$idusuario=$_SESSION['iduser'];
 		$r=0;

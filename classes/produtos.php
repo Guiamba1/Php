@@ -20,6 +20,9 @@
 
 			return mysqli_insert_id($conexao);
 		}
+
+		//======================================================================
+
 		public function inserirProduto($dados){
 			$c= new conectar();
 			$conexao=$c->conexao();
@@ -46,7 +49,7 @@
 		}
 
 
-
+//=================================================================
 		public function obterDados($idproduto){
 			$c= new conectar();
 			$conexao=$c->conexao();

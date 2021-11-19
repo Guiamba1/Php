@@ -1,0 +1,28 @@
+
+
+.foto{
+    background: blue !important;
+    width: 150px;
+    margin-left: 5px;
+    padding: 5px;
+}
+
+form{
+    background: #fff !important;
+   
+    box-shadow: 0 0 10px rgb(0, 0, 0,0.2) !important;
+    color: black !important;
+}
+
+form .selecao{
+    width: 300px !important;
+    margin-left: 10px;
+}
+form .selecao1{
+    width: 280px !important;
+    margin-left: 10px;
+}
+form h4{
+    text-align: center !important;
+}
+
