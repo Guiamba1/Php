@@ -19,15 +19,15 @@
 	<div class="col-sm-1"></div>
 	<div class="col-sm-10">
 		<div class="table-responsive">
-			<table class="table table-hover table-condensed table-bordered" style="text-align: center;">
+			<table class="table table-hover table-condensed table-bordered" style="text-align: left;">
 				<caption><label>Vendas</label></caption>
 				<tr>
 					<td>Código</td>
 					<td>Data</td>
 					<td>Cliente</td>
 					<td>Total da Compra</td>
-					<td>Comprovante</td>
-					<td>Relatório</td>
+					<td>Relatorios</td>
+					<!-- <td>Relatório</td> -->
 				</tr>
 		<?php while($ver=mysqli_fetch_row($result)): ?>
 				<tr>
@@ -35,7 +35,7 @@
 					<td><?php echo date("d/m/Y", strtotime($ver[1])) ?></td>
 					<td>
 						<?php
-							if($obj->nomeCliente($ver[2])==" "){
+							if($obj->nomeCliente($ver[2])== ""){
 								echo "S/C";
 							}else{
 								echo $obj->nomeCliente($ver[2]);
@@ -54,12 +54,12 @@
 							Recibo <span class="glyphicon glyphicon-list-alt"></span>
 						</a>
 					</td>
-					<td>
+					<!--
 						<a href="../procedimentos/vendas/criarRelatorioPdf.php?idvenda=<?php echo $ver[0] ?>"
                          class="btn btn-danger btn-sm">
 							Relatório <span class="glyphicon glyphicon-file"></span>
 						</a>	
-					</td>
+					</td  --->
 				</tr>
 		<?php endwhile; ?>
 			</table>

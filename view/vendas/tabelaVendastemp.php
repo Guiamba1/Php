@@ -32,13 +32,15 @@
  	<tr>
  		<td><?php echo $d[1] ?></td>
  		<td><?php echo $d[2] ?></td>
- 		<td><?php echo $d[3].",00 Mtn" ?></td>
+ 		<td><?php echo $d[3]." Mtn" ?></td>
  		<td><?php echo $d[6]; ?></td>
  		<td>
 
  			
 
- 			<span class="btn btn-danger btn-xs" onclick="fecharP('<?php echo $i; ?>'), editarP('<?php echo $d[0]; ?>, <?php echo $d[5]; ?>')">
+ 			<span class="btn btn-danger btn-xs"
+			  onclick="fecharP('<?php echo $i; ?>'), 
+			  editarP('<?php echo $d[0]; ?>, <?php echo $d[5]; ?>')">
  				<span class="glyphicon glyphicon-remove"></span>
  			</span>
  		</td>

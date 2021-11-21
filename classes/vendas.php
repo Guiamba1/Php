@@ -105,7 +105,9 @@ class vendas{
 
 		$ver=mysqli_fetch_row($result);
 
-		return $ver[1]." ".$ver[0];
+	return $ver[1]." ".$ver[0];
+
+		
 	}
 
 	public function obterTotal($idvenda){

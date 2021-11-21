@@ -2,6 +2,11 @@
 
 require_once '../../lib/dompdf/autoload.inc.php';
 use Dompdf\Dompdf;
+use Dompdf\Options;
+
+
+$option =  new Options();
+$option ->set('isRemoteEnabled', true);
 
 $id=$_GET['idvenda'];
 
@@ -23,7 +28,7 @@ function file_get_contents_curl($url) {
 
  
 // Instanciamos um objeto da classe DOMPDF.
-$pdf = new DOMPDF();
+$pdf = new DOMPDF($option);
  
 // Definimos o tamanho do papel e orientação.
 $pdf->set_paper("letter", "portrait");

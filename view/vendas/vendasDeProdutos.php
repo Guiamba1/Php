@@ -22,14 +22,13 @@ require_once "../../classes/conexao.php";
 	<div class="col-sm-4 ">
     
 		<form id="frmVendasProdutos">
-        <h4 class = "titulo">Vender Produtoz</h4>
+        <h4 class = "titulo">Vender Produtos</h4>
 			<label>Selecionar Cliente</label>
 			<select class="form-control input-sm selecao1" id="clienteVenda" name="clienteVenda">
 				<option value="A">Selecionar</option>
-				<option value="0">Cliente Nao Cadastrado</option>
+				<!--option value="0">Cliente Nao Cadastrado</option-->
 				<?php
-				$sql="SELECT id_cliente,nome,sobrenome 
-				from clientes";
+				$sql="SELECT id_cliente,nome,sobrenome from clientes order by nome;";
 				$result=mysqli_query($conexao,$sql);
 				while ($cliente=mysqli_fetch_row($result)):
 					?>
@@ -108,13 +107,16 @@ require_once "../../classes/conexao.php";
 
 
 
-			if(quant > quantidade){
+	
+if(parseInt(quant) > parseInt(quantidade)){
 				alertify.alert("Quantidade inexistente em estoque!!");
 				quant = $('#quantV').val("");
 				return false;
 			}else{
 				quantidade = $('#quantidadeV').val();
 			}
+			
+			  
 
 			if(vazios > 0){
 				alertify.alert("Preencha os Campos!!");
