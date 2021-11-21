@@ -12,7 +12,7 @@ $id=$_GET['idvenda'];
 
 
 
- $html=file_get_contents("http://localhost/php/view/vendas/comprovanteVendaPdf.php?idvenda=".$id);
+ $html=file_get_contents("http://sisvendasphp-com.umbler.net/view/vendas/comprovanteVendaPdf.php?idvenda=".$id);
 
 
  

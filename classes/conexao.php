@@ -1,9 +1,9 @@
 <?php 
 
 class conectar{
-	private $servidor = "localhost";
-	private $usuario = "root";
-	private $senha = "";
+	private $servidor = "mysql000.umbler.com";
+	private $usuario = "oscar";
+	private $senha = "guiamba22";
 	private $bd = "phpoo";
 
 	public function conexao(){

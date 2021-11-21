@@ -14,6 +14,9 @@
 </head>
 <body>
 
+<div id="vendasFeitas">
+
+</div>
 </body>
 </html>
 
@@ -24,3 +27,14 @@
 }
 
  ?>
+
+<script type="text/javascript">
+		$(document).ready(function(){
+			
+				$('#vendasFeitas').load('vendas/vendasRelatorios.php');
+				$('#vendasFeitas').show();
+			});
+		
+		
+
+	</script>
